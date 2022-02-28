@@ -167,15 +167,15 @@ Text GLabel 5600 3400 0    50   Input ~ 0
 ACC_MISO
 Text GLabel 5600 3500 0    50   Input ~ 0
 ACC_SCK
-Text GLabel 7400 3400 0    50   Input ~ 0
+Text GLabel 7500 3950 0    50   Input ~ 0
 ACC_CS
-Text GLabel 7400 3200 0    50   Input ~ 0
+Text GLabel 7500 3750 0    50   Input ~ 0
 ACC_MOSI
-Text GLabel 7400 3300 0    50   Input ~ 0
+Text GLabel 7500 3850 0    50   Input ~ 0
 ACC_MISO
-Text GLabel 7400 3500 0    50   Input ~ 0
+Text GLabel 7500 4050 0    50   Input ~ 0
 ACC_SCK
-Text GLabel 7400 3600 0    50   Input ~ 0
+Text GLabel 7500 4150 0    50   Input ~ 0
 INT1
 $Comp
 L Sensor_Pressure:MS5607-02BA U2
@@ -263,67 +263,34 @@ F 3 "" H 4700 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 621490E9
-P 7600 2600
-F 0 "J3" H 7680 2592 50  0000 L CNN
-F 1 "Conn_01x02" H 7680 2501 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7600 2600 50  0001 C CNN
-F 3 "~" H 7600 2600 50  0001 C CNN
-	1    7600 2600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR0111
 U 1 1 6214A184
-P 7400 2600
-F 0 "#PWR0111" H 7400 2450 50  0001 C CNN
-F 1 "+3V3" H 7415 2773 50  0000 C CNN
-F 2 "" H 7400 2600 50  0001 C CNN
-F 3 "" H 7400 2600 50  0001 C CNN
-	1    7400 2600
+P 7500 3650
+F 0 "#PWR0111" H 7500 3500 50  0001 C CNN
+F 1 "+3V3" H 7515 3823 50  0000 C CNN
+F 2 "" H 7500 3650 50  0001 C CNN
+F 3 "" H 7500 3650 50  0001 C CNN
+	1    7500 3650
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0112
 U 1 1 6214A8B1
-P 7400 2700
-F 0 "#PWR0112" H 7400 2450 50  0001 C CNN
-F 1 "GND" H 7405 2527 50  0000 C CNN
-F 2 "" H 7400 2700 50  0001 C CNN
-F 3 "" H 7400 2700 50  0001 C CNN
-	1    7400 2700
+P 7500 4750
+F 0 "#PWR0112" H 7500 4500 50  0001 C CNN
+F 1 "GND" H 7505 4577 50  0000 C CNN
+F 2 "" H 7500 4750 50  0001 C CNN
+F 3 "" H 7500 4750 50  0001 C CNN
+	1    7500 4750
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J2
-U 1 1 6214B921
-P 7700 5050
-F 0 "J2" H 7780 5042 50  0000 L CNN
-F 1 "Conn_01x04" H 7780 4951 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7700 5050 50  0001 C CNN
-F 3 "~" H 7700 5050 50  0001 C CNN
-	1    7700 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x05 J1
-U 1 1 6214C97C
-P 7600 3400
-F 0 "J1" H 7680 3442 50  0000 L CNN
-F 1 "Conn_01x05" H 7680 3351 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 7600 3400 50  0001 C CNN
-F 3 "~" H 7600 3400 50  0001 C CNN
-	1    7600 3400
-	1    0    0    -1  
-$EndComp
-Text GLabel 7500 5150 0    50   Input ~ 0
+Text GLabel 7500 4550 0    50   Input ~ 0
 BAR_MISO
-Text GLabel 7500 5050 0    50   Input ~ 0
+Text GLabel 7500 4450 0    50   Input ~ 0
 BAR_MOSI
-Text GLabel 7500 4950 0    50   Input ~ 0
+Text GLabel 7500 4350 0    50   Input ~ 0
 BAR_SCK
-Text GLabel 7500 5250 0    50   Input ~ 0
+Text GLabel 7500 4650 0    50   Input ~ 0
 BAR_CS
 Wire Wire Line
 	5150 4950 5150 4900
@@ -384,4 +351,16 @@ F 3 "" H 3350 4300 50  0001 C CNN
 	1    3350 4300
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x12 J1
+U 1 1 621C38AD
+P 7700 4150
+F 0 "J1" H 7780 4142 50  0000 L CNN
+F 1 "Conn_01x12" H 7780 4051 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 7700 4150 50  0001 C CNN
+F 3 "~" H 7700 4150 50  0001 C CNN
+	1    7700 4150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7500 4250
 $EndSCHEMATC
